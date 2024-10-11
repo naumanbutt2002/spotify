@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"nauman-spotify","appId":"1:672946111293:android:50450a80238f25aeb2bb54","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"nauman-spotify","configurations":{"android":"1:672946111293:android:50450a80238f25aeb2bb54","ios":"1:672946111293:ios:3df1adfe1f715653b2bb54"}}}}}}

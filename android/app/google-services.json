@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "672946111293",
+    "project_id": "nauman-spotify",
+    "storage_bucket": "nauman-spotify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672946111293:android:50450a80238f25aeb2bb54",
+        "android_client_info": {
+          "package_name": "com.example.spotify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5rtvul-ZnF6LNVMXJWM45btNcNsTFvQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
