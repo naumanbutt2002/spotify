@@ -5,7 +5,7 @@ import 'package:spotify/domain/entities/song/song.dart';
 import 'package:spotify/presentation/song_player/bloc/song_player_cubit.dart';
 import 'package:spotify/presentation/song_player/bloc/song_player_state.dart';
 
-// import '../../../common/widgets/favorite_button/favorite_button.dart';
+import '../../../common/widgets/favorite_button/favorite_button.dart';
 import '../../../core/configs/constants/app_urls.dart';
 import '../../../core/configs/theme/app_colors.dart';
 
@@ -99,9 +99,9 @@ class SongPlayerPage extends StatelessWidget {
               ),
           ],
         ),
-          // FavoriteButton(
-          //   songEntity: songEntity
-          // )
+          FavoriteButton(
+            songEntity: songEntity
+          )
       ],
     );
   }

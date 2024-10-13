@@ -10,10 +10,10 @@ import 'package:spotify/domain/usecases/auth/signup.dart';
 import 'package:spotify/domain/usecases/song/get_news_songs.dart';
 import 'package:spotify/domain/usecases/song/get_play_list.dart';
 // import 'package:spotify/domain/usecases/auth/get_user.dart';
-// import 'package:spotify/domain/usecases/song/add_or_remove_favorite_song.dart';
+import 'package:spotify/domain/usecases/song/add_or_remove_favorite_song.dart';
 // import 'package:spotify/domain/usecases/song/get_favorite_songs.dart';
 // import 'package:spotify/domain/usecases/song/get_play_list.dart';
-// import 'package:spotify/domain/usecases/song/is_favorite_song.dart';
+import 'package:spotify/domain/usecases/song/is_favorite_song.dart';
 
 
 // import 'domain/usecases/auth/sigin.dart';
@@ -45,13 +45,13 @@ Future<void> initializeDependencies() async {
   GetPlayListUseCase()
  );
 
-//  sl.registerSingleton<AddOrRemoveFavoriteSongUseCase>(
-//   AddOrRemoveFavoriteSongUseCase()
-//  );
+ sl.registerSingleton<AddOrRemoveFavoriteSongUseCase>(
+  AddOrRemoveFavoriteSongUseCase()
+ );
 
-//  sl.registerSingleton<IsFavoriteSongUseCase>(
-//   IsFavoriteSongUseCase()
-//  );
+ sl.registerSingleton<IsFavoriteSongUseCase>(
+  IsFavoriteSongUseCase()
+ );
 
 //  sl.registerSingleton<GetUserUseCase>(
 //   GetUserUseCase()

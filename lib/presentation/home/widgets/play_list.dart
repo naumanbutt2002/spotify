@@ -4,7 +4,7 @@ import 'package:spotify/common/helpers/is_dark_mode.dart';
 import 'package:spotify/core/configs/theme/app_colors.dart';
 import 'package:spotify/presentation/home/bloc/play_list_cubit.dart';
 
-// import '../../../common/widgets/favorite_button/favorite_button.dart';
+import '../../../common/widgets/favorite_button/favorite_button.dart';
 import '../../../domain/entities/song/song.dart';
 import '../../song_player/pages/song_player.dart';
 import '../bloc/play_list_state.dart';
@@ -129,9 +129,9 @@ class PlayList extends StatelessWidget {
                     songs[index].duration.toString().replaceAll('.', ':')
                   ),
                   const SizedBox(width: 20,),
-                  // FavoriteButton(
-                  //   songEntity: songs[index],
-                  // )
+                  FavoriteButton(
+                    songEntity: songs[index],
+                  )
                 ],
               )
             ],
