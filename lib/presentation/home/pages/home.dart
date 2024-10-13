@@ -52,16 +52,19 @@ class _HomePageState extends State<HomePage>
           children: [
             _homeTopCard(),
             _tabs(),
-            SizedBox(
-              height: 260,
-              child: TabBarView(
-                controller: _tabController,
-                children: [
-                  const NewsSongs(),
-                  Container(),
-                  Container(),
-                  Container()
-                ],
+            Padding(
+              padding: const EdgeInsets.fromLTRB(2.0, 0, 2.0, 0),
+              child: SizedBox(
+                height: 260,
+                child: TabBarView(
+                  controller: _tabController,
+                  children: [
+                    const NewsSongs(),
+                    Container(),
+                    Container(),
+                    Container()
+                  ],
+                ),
               ),
             ),
             const PlayList()
@@ -97,6 +100,7 @@ class _HomePageState extends State<HomePage>
   Widget _tabs() {
     return TabBar(
       controller: _tabController,
+      dividerColor: Colors.transparent,
       isScrollable: true,
       labelColor: context.isDarkMode ? Colors.white : Colors.black,
       indicatorColor: AppColors.primary,

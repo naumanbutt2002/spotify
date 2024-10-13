@@ -17,9 +17,9 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const BasicAppbar(
-        backgroundColor: Color(0xff2C2B2B) ,
-        title: Text(
+      appBar: BasicAppbar(
+        backgroundColor: context.isDarkMode ? const Color(0xff2C2B2B) : Colors.white,
+        title: const Text(
           'Profile'
         ),
       ),
