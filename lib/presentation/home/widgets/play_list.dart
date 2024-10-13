@@ -6,7 +6,7 @@ import 'package:spotify/presentation/home/bloc/play_list_cubit.dart';
 
 // import '../../../common/widgets/favorite_button/favorite_button.dart';
 import '../../../domain/entities/song/song.dart';
-// import '../../song_player/pages/song_player.dart';
+import '../../song_player/pages/song_player.dart';
 import '../bloc/play_list_state.dart';
 
 class PlayList extends StatelessWidget {
@@ -73,15 +73,15 @@ class PlayList extends StatelessWidget {
       itemBuilder: (context,index) {
         return GestureDetector(
           onTap: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //    builder: (BuildContext context) 
-            //   => SongPlayerPage(
-            //     songEntity: songs[index],
-            //   )
-            // )
-            // );
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+               builder: (BuildContext context) 
+              => SongPlayerPage(
+                songEntity: songs[index],
+              )
+            )
+            );
           },
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

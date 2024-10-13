@@ -4,7 +4,7 @@ import 'package:spotify/common/helpers/is_dark_mode.dart';
 import 'package:spotify/core/configs/constants/app_urls.dart';
 import 'package:spotify/core/configs/theme/app_colors.dart';
 import 'package:spotify/presentation/home/bloc/news_songs_cubit.dart';
-// import 'package:spotify/presentation/song_player/pages/song_player.dart';
+import 'package:spotify/presentation/song_player/pages/song_player.dart';
 
 import '../../../domain/entities/song/song.dart';
 import '../bloc/news_songs_state.dart';
@@ -48,15 +48,15 @@ class NewsSongs extends StatelessWidget {
       itemBuilder: (context,index) {
         return GestureDetector(
           onTap: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //    builder: (BuildContext context) 
-            //   => SongPlayerPage(
-            //     songEntity: songs[index],
-            //   )
-            // )
-            // );
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+               builder: (BuildContext context) 
+              => SongPlayerPage(
+                songEntity: songs[index],
+              )
+            )
+            );
           },
           child: SizedBox(
             width: 160,
