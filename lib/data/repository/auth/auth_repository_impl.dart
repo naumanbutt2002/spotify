@@ -19,15 +19,11 @@ class AuthRepositoryImpl extends AuthRepository {
     return await sl<AuthFirebaseService>().signup(createUserReq);
   }
   
-  @override
-  Future<Either> getUser() {
-    // TODO: implement getUser
-    throw UnimplementedError();
-  }
   
-  // @override
-  // Future<Either> getUser() async {
-  //   return await sl<AuthFirebaseService>().getUser();
-  // }
+  
+  @override
+  Future<Either> getUser() async {
+    return await sl<AuthFirebaseService>().getUser();
+  }
   
 }
